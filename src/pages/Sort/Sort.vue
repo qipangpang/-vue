@@ -45,6 +45,54 @@
             <li class="item">
               <a class="txt" href="javascript:;">换季专区</a>
             </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
+            <li class="item">
+              <a class="txt" href="javascript:;">换季专区</a>
+            </li>
           </ul>
           <div></div>
         </div>
@@ -56,15 +104,178 @@
             <div class="banner">
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./images/01.jpg" class="img"></div>
-                  <div class="swiper-slide"><img src="./images/02.jpg" class="img"></div>
+                  <div class="swiper-slide">
+                    <img src="./images/01.jpg" class="img" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/02.jpg" class="img" />
+                  </div>
                 </div>
                 <!-- 如果需要滚动条 -->
                 <div class="swiper-scrollbar"></div>
               </div>
             </div>
             <!-- 图例 -->
-            <div class="cateList"></div>
+            <div class="cateList">
+              <ul class="list">
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+                <li class="cateItem">
+                  <div class="cateImgWrapper">
+                    <img src="./images/02.png" alt />
+                  </div>
+                  <div class="name">明星商品</div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -72,10 +283,14 @@
   </div>
 </template>
 <script>
+import BScroll from "better-scroll";
 import Swiper from "swiper";
 import "swiper/css/swiper.min.css";
 export default {
   mounted() {
+    // let scrollLeft = new BScroll(".m-style");
+    let scrollRight = new BScroll(".cateList");
+    let scrollLeft = new BScroll(".m-cateNavVertWrap");
     var mySwiper = new Swiper(".swiper-container", {
       loop: true, // 循环模式选项
       // 如果需要滚动条
@@ -191,4 +406,32 @@ export default {
               img
                 width 100%
                 height 100%
+          .cateList
+            width 100%
+            height 700px
+            // overflow hidden
+            .list
+              width 100%
+              // height 100%
+              .cateItem
+                display inline-block
+                margin-right 0.35333rem
+                font-size 0
+                width 1.92rem
+                vertical-align top
+                .cateImgWrapper
+                  width 1.92rem
+                  height 1.92rem
+                  img
+                    display block
+                    width 100%
+                    height 100%
+                    background #ffffff
+                .name
+                  height 0.96rem
+                  font-size 0.32rem
+                  color #333
+                  text-align center
+                  line-height 0.48rem
+                  overflow hidden
 </style>
