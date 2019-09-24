@@ -4,6 +4,8 @@ import router from './router'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import Header from './components/Header/Header.vue'
+// 引入mockjs文件
+import './mock/mock-server'
 // 注册Header全局组件
 Vue.component('Header', Header)
 

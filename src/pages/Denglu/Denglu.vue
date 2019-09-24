@@ -4,26 +4,45 @@
       <div class="login_header">
         <h2 class="login_logo">网易严选</h2>
         <div class="login_header_title">
-          <a href="javascript:;" class="on">短信登录</a>
-          <a href="javascript:;">密码登录</a>
+          <a href="javascript:;" :class="{'on':loginWay}" @click="loginWay=true">短信登录</a>
+          <a href="javascript:;" :class="{'on':!loginWay}" @click="loginWay=false">密码登录</a>
         </div>
       </div>
       <div class="login_content">
         <form>
-          <div class="on">
+          <div :class="{'on':loginWay}">
             <section class="login_message">
-              <input type="tel" maxlength="11" placeholder="手机号" />
-              <button disabled="disabled" class="get_verification">获取验证码</button>
+              <input
+                type="tel"
+                maxlength="11"
+                placeholder="手机号"
+                v-model="phone"
+                name="phone"
+               
+              />
+              <button
+                :disabled="!isRightPhone||computeTime>0"
+                class="get_verification"
+                :class="{right:isRightPhone}"
+                @click.prevent="sendCode"
+              >{{computeTime>0?`已发送(${computeTime})s`:'获取验证码'}}</button>
             </section>
             <section class="login_verification">
-              <input type="tel" maxlength="8" placeholder="验证码" />
+              <input
+                type="tel"
+                maxlength="8"
+                placeholder="验证码"
+                name="code"
+                v-model="code"
+               
+              />
             </section>
             <section class="login_hint">
               温馨提示：未注册的手机号，登录时将自动注册，且代表已同意
               <a href="javascript:;">《用户服务协议》</a>
             </section>
           </div>
-          <div>
+          <div :class="{'on':!loginWay}">
             <section>
               <section class="login_message">
                 <input type="tel" maxlength="11" placeholder="手机/邮箱/用户名" />
@@ -53,7 +72,48 @@
   </section>
 </template>
 <script>
-export default {};
+import { reqSendCode } from "../../api";
+export default {
+  data() {
+    return {
+      loginWay: true,
+      phone: "",
+      computeTime: 0,
+      code:''
+    };
+  },
+  computed: {
+    isRightPhone() {
+      return /[1]\d{10}/.test(this.phone);
+    }
+  },
+  methods: {
+    // 发送短信验证码
+    async sendCode() {
+      console.log("pangpang");
+
+      this.computeTime = 15;
+      this.timeId = setInterval(() => {
+        this.computeTime--;
+        if (this.computeTime < 0) {
+          this.computeTime = 0;
+          clearInterval(this.timeId);
+        }
+      }, 1000);
+      // 发送验证码
+      const result=await reqSendCode(this.phone)
+       if(result.code===0){
+          alert('发送成功')
+      }else{
+        this.computeTime=0
+        clearInterval(this.timeId)
+        //错误消息
+        alert(result.msg)
+      }
+    },
+    
+  }
+};
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
 // @import '../../common/stylus/mixins.styl'
@@ -116,6 +176,8 @@ export default {};
               color #ccc
               font-size 28px
               background transparent
+              &.right
+                color black
           .login_verification
             position relative
             margin-top 32px

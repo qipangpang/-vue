@@ -209,7 +209,7 @@ export default {
   }
   },
   mounted() {
-    var mySwiper = new Swiper ('.swiper-container', {
+    var  mySwiper = new Swiper ('.swiper-container', {
     loop: true, // 循环模式选项
     autoplay:true,  // 设置自动循环播放
     // 如果需要滚动条

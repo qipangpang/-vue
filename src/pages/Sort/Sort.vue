@@ -18,7 +18,7 @@
       <div class="m-cateNavVertWrap">
         <div class="m-style">
           <ul class="m-cateNavVert">
-            <li class="item active">
+            <li class="item active" @click="clickItem(index)">
               <a class="txt" href>换季专区</a>
             </li>
             <li class="item">
@@ -118,7 +118,7 @@
             <!-- 图例 -->
             <div class="cateList">
               <ul class="list">
-                <li class="cateItem">
+                <li class="cateItem" @click="$router.push('/cart')">
                   <div class="cateImgWrapper">
                     <img src="./images/02.png" alt />
                   </div>
@@ -283,14 +283,24 @@
   </div>
 </template>
 <script>
+import { mapState } from "vuex";
 import BScroll from "better-scroll";
 import Swiper from "swiper";
 import "swiper/css/swiper.min.css";
 export default {
+  data() {
+    return {
+      scrollY: 0, // 纵向滚动的值
+      tops: [] // 存储每个选项高度值得数组
+    };
+  },
   mounted() {
     // let scrollLeft = new BScroll(".m-style");
-    let scrollRight = new BScroll(".cateList");
-    let scrollLeft = new BScroll(".m-cateNavVertWrap");
+    // 初始化滚动
+    this._initScroll();
+    // 初始化tops数据---数组----所有li的高度的数据集合
+    this._initTops();
+
     var mySwiper = new Swiper(".swiper-container", {
       loop: true, // 循环模式选项
       // 如果需要滚动条
@@ -298,6 +308,39 @@ export default {
         el: ".swiper-scrollbar"
       }
     });
+  },
+  methods: {
+    _initScroll() {
+      this.leftScroll = new BScroll(".cateList", {
+        click: true
+      });
+      this.rightScroll = new BScroll(".m-cateNavVertWrap", {
+        click: true,
+        probeType: 1
+      });
+       this.rightScroll.on("scroll", ({ x, y }) => {
+        this.scrollY = Math.abs(y); //abs取绝对值
+      });
+      this.rightScroll.on("scrollEnd", ({ x, y }) => {
+        this.scrollY = Math.abs(y); //abs取绝对值
+      });
+    },
+     // 初始化tops数据---数组
+    _initTops() {
+      // 装载数据--tops
+      const tops = [];
+      let top = 0;
+      tops.push(top);
+      // 获取右侧列表中li
+      const list = this.$refs.list.children;
+      Array.prototype.slice.call(list).forEach(li => {
+        top += li.clientHeight;
+        tops.push(top);
+      });
+      // console.log(tops);
+      // 更新数据
+      this.tops = tops;
+    },
   }
 };
 </script>
